@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="libname">
+        <item>OkHttp3.0</item>
+        <item>OkHttp2.0</item>
+        <item>URLConnection</item>
+        <item>HttpClient</item>
+    </string-array>
+</resources>

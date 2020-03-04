@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reqmethod">
+        <item>Get</item>
+        <item>Post</item>
+        <item>Head</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

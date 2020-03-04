@@ -1,0 +1,17 @@
+{
+  "name": "testjni-master",
+  "version": "1.0.0",
+  "description": "Test code for NDK lib used to catch native crash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-native": "^0.61.5",
+    "react-native-tingyunapp": "^1.0.0"
+  }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:id="@+id/initSaas"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="init Saas"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/initSaas"
+        android:id="@+id/initEAHttp"
+        android:text="init EA by Http"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/initEAHttp"
+        android:id="@+id/initEAHttps"
+        android:text="init EA by Https"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/initEAHttps"
+        android:id="@+id/initEAHttpsNoCert"
+        android:text="init EA by Https without Cert"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

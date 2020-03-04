@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AC_net">
+
+    <EditText
+        android:id="@+id/ed_request_url"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:hint="@string/hint_input_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:tooltipText="@string/hint_input_url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_request_url"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/reqmethod"
+        android:prompt="@string/spinner_title_requestmethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner"
+        app:layout_constraintTop_toBottomOf="@id/ed_request_url"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        android:text="OK"
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/btn_ok"
+        android:text="Test Http(s) errors"
+        android:id="@+id/btn_http_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/btn_http_error"
+        android:text="Test Http(s) errors"
+        android:id="@+id/err_901_unknown_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<WebView
+        android:id="@+id/webview_AC_net"
+        android:layout_width="395dp"
+        android:layout_height="590dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="133dp" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

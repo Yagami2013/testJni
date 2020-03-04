@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="信息"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_network"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_network"
+            android:text="测试"/>
+
+        <RadioButton
+            android:id="@+id/rb_record"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_record"
+            android:text="@string/tab_menu_record"/>
+
+        <RadioButton
+            android:id="@+id/rb_ui"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_ui"
+            android:text="@string/tab_menu_ui"/>
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_crash"
+            android:text="@string/tab_menu_crash"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/div_white" />
+
+    <FrameLayout
+        android:id="@+id/fg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/ly_top_bar"></FrameLayout>
+
+</RelativeLayout>

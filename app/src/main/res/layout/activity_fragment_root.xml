@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yangtt.personal.testjni_saas.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LL_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/searchHint" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_tabBottum"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab1" />
+
+        <Button
+            android:id="@+id/tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab2" />
+
+        <Button
+            android:id="@+id/tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab3" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/LL_search"
+        android:layout_above="@id/LL_tabBottum">
+
+    </FrameLayout>
+
+</RelativeLayout>

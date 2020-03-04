@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TestJni</string>
+    <string name="tx_native_crash">native crash</string>
+    <string name="tx_java_crash">Java Crash</string>
+    <string name="tx_java_crash_net">Java Crash With net request</string>
+    <string name="tx_native_interface">native interface</string>
+    <string name="tx_crash_on_resume">Crash on resume</string>
+    <string name="tx_button1">StartActivity</string>
+    <string name="tx_button2">native crash from bugly</string>
+    <string name="tab1">网络</string>
+    <string name="tab2">交互</string>
+    <string name="tab3">崩溃</string>
+    <string name="hint_input_url">输入请求的URL</string>
+    <string name="spinner_title_libname">请选择网络类库</string>
+    <string name="spinner_title_requestmethod">请选择请求方法</string>
+    <string name="grid_2">URLConnection测试</string>
+    <string name="tab_menu_ui">交互</string>
+    <string name="tab_menu_crash">崩溃</string>
+    <string name="tab_menu_network">网络</string>
+    <string name="tab_menu_record">记录</string>
+    <string name="searchHint">我是搜索框</string>
+    <string name="search">搜索</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="configTest">配置项测试</string>
+    <string name="errorTest">Http/网络错误测试</string>
+    <string name="webviewTest">Webview测试</string>
+    <string name="webviewDefaultUrl">http://hao123.com/</string>
+    <string name="apple">苹果</string>
+    <string name="lemon">柠檬</string>
+    <string name="grape">葡萄</string>
+    <string name="uid_hint">输入UID</string>
+    <item name="Tag_Left" type="id"></item>
+    <item name="Tag_Right" type="id"></item>
+    <string name="testString">寒雨连江夜入吴，\n平明送客楚山孤。\n洛阳亲友如相问，\n一片冰心在玉壶。</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">sdktest.networkbench.com</domain>
+        <!--<domain includeSubdomains="true">redirect.networkbench.com</domain>-->
+        <!--<domain includeSubdomains="true">dct1.networkbench.com</domain>-->
+        <!--<domain includeSubdomains="true">dc1alpha1.networkbench.com</domain>-->
+        <!--<domain includeSubdomains="true">dc1.networkbench.com</domain>-->
+        <domain includeSubdomains="true">testerhome.com</domain>
+        <domain includeSubdomains="true">www.baidu.com</domain>
+        <domain includeSubdomains="true">passport.jd.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/chls" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

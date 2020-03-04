@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btn_test_error"
+        android:text="TestCustomError"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/btn_test_error"
+        android:id="@+id/btn_test_exception"
+        android:text="TestException"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/btn_test_exception"
+        android:id="@+id/btn_test_custom_exception"
+        android:text="TestCustomException"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/btn_test_custom_exception"
+        android:id="@+id/create_101_errors"
+        android:text="Create101Error"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/create_101_errors"
+        android:id="@+id/create_long_msg"
+        android:text="CreateLongMessage"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/create_long_msg"
+        android:id="@+id/create_special_msg"
+        android:text="CreateSpecialMessage"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/create_special_msg"
+        android:id="@+id/create_null_msg"
+        android:text="CreateNullMessage"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/create_null_msg"
+        android:id="@+id/create_null_metaData"
+        android:text="CreateNullMetaData"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/txt_hide_title"
+        android:text="芙蓉楼送辛渐"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/txt_hide_author"
+        android:text="王昌龄"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/txt_hide_body1"
+        android:singleLine="false"
+        android:text="@string/testString"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--<TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/txt_hide_body2"
+        android:text="山平明送客楚孤。"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/txt_hide_body3"
+        android:text="洛阳亲友如相问,"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/txt_hide_body4"
+        android:text="一片冰心在玉壶。"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+</LinearLayout>

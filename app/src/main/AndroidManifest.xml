@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yangtt.personal.testjni_saas">
+    <!--非必要权限，用以获取当前设备的网络状态和WiFi状态，如：2G、3G、4G、WiFi-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 使用可视化操作命名功能需配置悬浮窗权限(选配) -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <!--获取基站信息-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUD_LOCATIN"/>
+    <application
+        android:name=".yApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+
+
+        <activity
+            android:name=".AC_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 请添加这里的整个intent-filter区块，并确保其中只有一个data字段 -->
+
+            <intent-filter>
+                <data android:scheme="tingyun.35738"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+            <!-- 请添加这里的整个intent-filter区块，并确保其中只有一个data字段 -->
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity android:name=".AC_ReactNative"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".AC_net"></activity>
+        <activity android:name=".AC_ANR" />
+        <activity android:name=".AC_UIDTest" />
+        <activity android:name=".AC_TraceTest" />
+        <activity android:name=".AC_ServiceTest" />
+        <activity android:name=".AC_Webview" />
+        <activity android:name=".AC_PopWindow" />
+        <activity android:name=".AC_46638" />
+        <activity android:name=".AC_46641" />
+        <activity android:name=".AC_46768" />
+        <activity android:name=".AC_46640" />
+        <activity android:name=".AC_46644" />
+        <activity android:name=".AC_Test" />
+        <activity android:name=".AC_News" />
+        <activity android:name=".AC_Crash" />
+        <activity android:name=".AC_Chat" />
+        <activity android:name=".AC_RadioButton" />
+        <activity android:name=".AC_Window" />
+        <activity android:name=".AC_ModeTest" />
+        <activity android:name=".AC_RecordWeight" />
+        <activity android:name=".AC_GSMCellLocation"/>
+        <activity android:name=".AC_StartOption"/>
+        <activity android:name=".AC_TestButtons"/>
+        <activity
+            android:name=".AC_SingleTask"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AC_SingleTop"
+            android:launchMode="singleTop" />
+
+        <service android:name=".SV_PrintLog">
+
+            <!--
+            <intent-filter>
+                <action android:name="testjni_saas_saas.SV_PRINTLOG"/>
+            </intent-filter>
+            -->
+        </service>
+    </application>
+
+</manifest>

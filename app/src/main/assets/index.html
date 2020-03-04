@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>听云APP SDK性能测试</title>
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="/js/dataTable/css/jquery.dataTables.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/dataTable/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="jumbotron">
+                <h1>
+                    每一款应用，都需要听云
+                </h1>
+
+                <p>
+                    该系统仅用于听云APP Android和IOS SDK性能测试，报告以网页形式展示，支持Firefox、chrome和Safari。
+                    点击下方列表中的链接，查看性能报告。第一列为报告创建的时间，第二列为当次测试的build号，每次build可能包含1.0版本和2.0版本，也可能仅有其中一个版本，
+                    为保持报告格式一致，如果当次build仅包含1.0版本时，显示的2.0版本为上次build的数据。如某个数据文件不存在，图表中数据显示为0。
+                </p>
+                <button onclick="testJava()">Test Java</button>
+            </div>
+            <table id="testtable">
+                <thead>
+                <tr>
+                    <th style=" align-content: center;">日期</th>
+                    <th align='center'>版本号</th>
+                    <th>操作系统</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>20150211</td>
+                    <td>2.1.0</td>
+                    <td><a href="ios.html?v=20150211Build2.1.0">IOS</a></td>
+                </tr>
+                <tr>
+                    <td>20150211</td>
+                    <td>2.2.0</td>
+                    <td><a href="android.html?v=20150211Build2.2.0">Android</a></td>
+                </tr>
+                 <tr>
+                    <td>20150327</td>
+                    <td>2.1.2</td>
+                    <td><a href="ios.html?v=20150327Build2.1.2">IOS</a></td>
+                </tr>
+                <tr>
+                    <td>20150404</td>
+                    <td>2.1.0vs2.1.2</td>
+                    <td><a href="ios.html?v=20150404Build1.0.17-2.1.2">IOS</a></td>
+                </tr>
+                <tr>
+                    <td>20150405</td>
+                    <td>2.1.0vs2.1.2</td>
+                    <td><a href="ios.html?v=20150405Build1.0.17-2.1.2">IOS</a></td>
+                </tr>
+                <tr>
+                    <td>20150409</td>
+                    <td>2.2.3</td>
+                    <td><a href="android.html?v=20150409Build2.2.3">Android</a></td>
+                </tr>
+                <tr>
+                    <td>20150824</td>
+                    <td>2.2.0</td>
+                    <td><a href="ios.html?v=20150824Build2.2.0">IOS</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+console.log("123456");
+    $('#testtable').DataTable({
+        "bStateSave": true
+    });
+    //    $(".form_datetime").datetimepicker({
+    //        format: "yyyymmdd",
+    //        weekStart: 1,
+    //        startDate: "2014-01-01",
+    //        minView: 2,
+    //        autoclose: true,
+    //        todayBtn: true,
+    //        pickerPosition: "bottom-left"
+    //    });
+function testJava(){
+    var name=window.AndroidString.getString()
+    var str="test alert"
+    alert(name)
+}
+
+</script>
+</html>

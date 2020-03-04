@@ -1,0 +1,14 @@
+*.log
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+build
+/captures
+.externalNativeBuild
+node_modules
+!node_modules/react-native-tingyunApp/*
+app/.cxx/cmake
+app/src/main/java/yangtt/personal/testjni_saas/util/Tingyun.java

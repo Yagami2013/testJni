@@ -1,0 +1,48 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/Horizental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/txt_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="flag setting"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/Horizental"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+/>
+
+    <Switch
+        android:id="@+id/sw_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="False"
+        android:textOn="True"
+        app:layout_constraintBaseline_toBaselineOf="@id/txt_flag"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <Button
+        android:id="@+id/btn_test_46640"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="46640 TestButton"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/Horizental"
+ />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,7 @@ import androidx.core.app.ActivityCompat;
 import yangtt.personal.testjni_saas.util.OkHttp3Builder;
 import yangtt.personal.testjni_saas.util.Test;
 import yangtt.personal.testjni_saas.util.TestUrls;
+import yangtt.personal.testjni_saas.util.Tingyun;
 
 public class MainActivity2 extends mBaseActivity implements RadioGroup.OnCheckedChangeListener{
 
@@ -70,6 +71,9 @@ public class MainActivity2 extends mBaseActivity implements RadioGroup.OnChecked
         }*/
     }
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -84,7 +88,7 @@ public class MainActivity2 extends mBaseActivity implements RadioGroup.OnChecked
                 OkHttpUtil.asyncGet(urls);*/
             }
         }).start();
-
+        //Tingyun.init(getApplicationContext());
 
         checkPermission();
         long onCreateStart=System.currentTimeMillis();
@@ -162,7 +166,7 @@ public class MainActivity2 extends mBaseActivity implements RadioGroup.OnChecked
     @Override
     protected void onResume() {
         super.onResume();
-        //Tingyun.setAppStartEnd(AC_Splash.class.getName());
+        Tingyun.setAppStartEnd(AC_Splash.class.getName());
     }
 
     private void hideAllFragment(FragmentTransaction fragmentTransaction){

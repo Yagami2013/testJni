@@ -5,7 +5,9 @@ import android.content.Context;
 
 import java.util.List;
 
+import yangtt.personal.testjni_saas.util.OkHttp3Builder;
 import yangtt.personal.testjni_saas.util.Test;
+import yangtt.personal.testjni_saas.util.TestUrls;
 import yangtt.personal.testjni_saas.util.Tingyun;
 import yangtt.personal.testjni_saas.LogY;
 /*import com.tencent.bugly.crashreport.CrashReport;*/
@@ -30,6 +32,9 @@ public class yApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        OkHttp3Builder builder=new OkHttp3Builder();
+        builder.get(TestUrls.chunk_baike);
 
         //Bugly.init(getApplicationContext());
         Tingyun.init(getApplicationContext());

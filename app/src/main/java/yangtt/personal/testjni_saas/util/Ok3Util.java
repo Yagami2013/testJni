@@ -20,8 +20,8 @@ import yangtt.personal.testjni_saas.LogY;
 public class Ok3Util {
 
     //    public static String TAG = MyApp.TAG;
-    public final static int CONNECT_TIMEOUT = 10;
-    public final static int READ_TIMEOUT = 5;
+    public final static int CONNECT_TIMEOUT = 20;
+    public final static int READ_TIMEOUT = 10;
     public final static int WRITE_TIMEOUT = 5;
     private static OkHttpClient mOkHttpClient = new OkHttpClient.Builder()
             .readTimeout(READ_TIMEOUT, TimeUnit.SECONDS)//设置读取超时时间
@@ -103,12 +103,12 @@ public class Ok3Util {
         return "";
 //        Request request = new Request.Builder().url(url).build();
 //        try {
-//            Log.e(TAG, "okHttpGet: Start" + (System.currentTimeMillis() - MyApp.attachBaseStart) );
+//            Log.e(TAG, "okHttpGet_nostream: Start" + (System.currentTimeMillis() - MyApp.attachBaseStart) );
 //            Response response = mOkHttpClient.newCall(request).execute();
 //            response.close();
 
 //            if (response.isSuccessful()) {
-//                Log.e(TAG, "okHttpGet: End" + (System.currentTimeMillis() - MyApp.attachBaseStart) );
+//                Log.e(TAG, "okHttpGet_nostream: End" + (System.currentTimeMillis() - MyApp.attachBaseStart) );
 //                response.close();
 ////                return response.body().string();
 //                return "1";
@@ -119,7 +119,7 @@ public class Ok3Util {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-//        Log.e(TAG, "okHttpGet: End" + (System.currentTimeMillis() - MyApp.attachBaseStart) );
+//        Log.e(TAG, "okHttpGet_nostream: End" + (System.currentTimeMillis() - MyApp.attachBaseStart) );
 //        return "response not successful";
     }
 
@@ -150,12 +150,20 @@ public class Ok3Util {
      * @param url
      * @return
      */
-    public static void okHttpGet(final String url) {
+    public static void okHttpGet_nostream(final String url) {
         Request request = new Request.Builder().url(url).build();
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call arg0, Response response) throws IOException {
+                response.close();
+                if (null == response.body()){
+                    LogY.m("response.body() = null");
+                }else {
+                    String hd=response.header("Content-Length");
+                    long cl=response.body().contentLength();
+                    LogY.m( "response.body().contentLength() = " + hd);
+                }
 //                InputStream is = response.body().byteStream();
 //                if (is != null) {
 //                    byte[] buffer = new byte[1024];

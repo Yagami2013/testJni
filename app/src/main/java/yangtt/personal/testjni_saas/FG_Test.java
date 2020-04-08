@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
+import yangtt.personal.testjni_saas.util.Ok3Util;
 import yangtt.personal.testjni_saas.util.OkHttp3Builder;
 import yangtt.personal.testjni_saas.util.TestUrls;
 import yangtt.personal.testjni_saas.util.Tingyun;
@@ -84,6 +85,9 @@ public class FG_Test extends ListFragment {
                 break;
             case 8:
                 LogY.m("anr start....."+System.currentTimeMillis());
+                Ok3Util.okHttpGet_nostream(TestUrls.accross_app);
+                new UrlConnectionBuilder().get(TestUrls.accross_app);
+                Ok3Util.okHttpGet_nostream(TestUrls.chunk_baike);
                 //LogY.wait(6);
                 for(int i=0;i<5;i++){
                     LogY.wait(1);

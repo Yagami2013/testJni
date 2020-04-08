@@ -9,9 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-//import com.networkbench.agent.impl.NBSAppAgent;
+import yangtt.personal.testjni_saas.util.Ok3Util;
+import yangtt.personal.testjni_saas.util.TestUrls;
 import yangtt.personal.testjni_saas.util.Tingyun;
 import yangtt.personal.testjni_saas.LogY;
+import yangtt.personal.testjni_saas.util.UrlConnectionBuilder;
+
 /**
  * Created by hj on 2018/12/25.
  */
@@ -77,7 +80,10 @@ public class AC_Splash extends mBaseActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //LogY.wait(4);
+        //test cross app in slow start
+        Ok3Util.okHttpGet_nostream(TestUrls.accross_app);
+        new UrlConnectionBuilder().get(TestUrls.accross_app);
+        LogY.wait(4);
         //NBSAppAgent.setUserIdentifier("userb");
         LogY.m("start end:"+System.currentTimeMillis());
         //onCreate called finish() and here will not run

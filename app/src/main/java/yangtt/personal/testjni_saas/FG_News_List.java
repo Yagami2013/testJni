@@ -92,12 +92,31 @@ public class FG_News_List extends mBaseFragment implements AdapterView.OnItemCli
                 builder.get(content);
                 break;
             case 4:
-                Ok3Util.okHttpGet(TestUrls.cdata);
-                Ok3Util.okHttpGet(TestUrls.qq);
-                Ok3Util.okHttpGet(TestUrls.news);
+                Ok3Util.okHttpGet_nostream(TestUrls.cdata);
+                Ok3Util.okHttpGet_nostream(TestUrls.qq);
+                Ok3Util.okHttpGet_nostream(TestUrls.news);
+                Ok3Util.okHttpGet_nostream(TestUrls.sk_content);
 //                builder.asyncGet(TestUrls.cdata);
 //                builder.asyncGet(TestUrls.qq);
 //                builder.asyncGet(TestUrls.news);
+                break;
+            case 7:
+                builder.get(TestUrls.cdata);
+                builder.get(TestUrls.qq);
+                builder.get(TestUrls.news);
+                break;
+            case 9:
+                Ok3Util.okHttpGet_nostream(content);
+                break;
+            case 10:
+                builder.get(content);
+                break;
+            case 11:
+                new UrlConnectionBuilder().get(content);
+                break;
+            case 12:
+                break;
+            case 13:
                 break;
                 default:
                     builder.get(content);

@@ -166,7 +166,7 @@ public class MainActivity2 extends mBaseActivity implements RadioGroup.OnChecked
     @Override
     protected void onResume() {
         super.onResume();
-        Tingyun.setAppStartEnd(AC_Splash.class.getName());
+        //Tingyun.setAppStartEnd(AC_Splash.class.getName());
     }
 
     private void hideAllFragment(FragmentTransaction fragmentTransaction){

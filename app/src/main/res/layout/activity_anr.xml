@@ -15,7 +15,7 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/conflictPrinter"
-            android:text="#17005 嵌码冲突验证"
+            android:text="#17005 嵌码冲突验证tmp慢操作带网络"
             android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

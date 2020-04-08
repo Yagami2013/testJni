@@ -5,8 +5,11 @@ public class TestUrls {
     public static String qq="http://www.qq.com";
     public static String news="http://www.xinhuanet.com/politics/leaders/2019-03/11/c_1124222229.htm";
     public static String cdata="http://c.data.mob.com/v3/cdata";
+    public static String sk_content="http://i4.desk.fd.zol-img.com.cn/t_s1080x1920/g5/M00/0E/0F/ChMkJlsYpoWIGyM4AALpWnaCWGcAAo2MAIyoe4AAuly645.jpg?downfile=1551776319938.jpg";
     //chunked
     public static String chunk_baike="https://baike.baidu.com/item/动物世界/20242925";
+    //content-length + chunked
+    public static String hcy_large="https://download4.caiyun.feixin.10086.cn/storageWeb/servlet/downloadServlet?code=SzUxNDExWUpIeDMxV0wxNzUxN24xRGxZRHBX&un=AD25C39D8C8742300DDD0DE0CC055CC222931ED009FAB8C85F90D6371F7596DB&dom=D971&txType=0";
 
     public static String accross_app="http://192.168.2.41:8080/External_01/";
     public  static String https_jd_param ="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fa.jd.com%2F";

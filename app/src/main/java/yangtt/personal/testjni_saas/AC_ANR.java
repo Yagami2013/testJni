@@ -8,6 +8,10 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
+import yangtt.personal.testjni_saas.util.Ok3Util;
+import yangtt.personal.testjni_saas.util.TestUrls;
+import yangtt.personal.testjni_saas.util.UrlConnectionBuilder;
+
 //import yangtt.personal.testjni_saas.util.PrinterTest;
 
 /**
@@ -33,8 +37,12 @@ public class AC_ANR extends mBaseActivity {
             @Override
             public void onClick(View v) {
                 //PrinterTest.test();
+                Ok3Util.okHttpGet_nostream(TestUrls.accross_app);
+                new UrlConnectionBuilder().get(TestUrls.accross_app);
+                Ok3Util.okHttpGet_nostream(TestUrls.chunk_baike);
                 LogY.wait(5);
-                startActivity(new Intent(AC_ANR.this,AC_46640.class));
+
+                //startActivity(new Intent(AC_ANR.this,AC_46640.class));
             }
         });
         btnGC.setOnClickListener(new View.OnClickListener() {

@@ -55,6 +55,7 @@ public class AC_News extends mBaseActivity {
         datas.add(new News("UrlConnection跨应用",TestUrls.accross_app));
         datas.add(new News("HttpClient跨应用",TestUrls.accross_app));
         datas.add(new News("ok2跨应用",TestUrls.accross_app));
+        datas.add(new News("上传文件",TestUrls.youdao));
         FG_News_List nlFragment = new FG_News_List();
         nlFragment.setfManager(fManager);
         nlFragment.setDatas(datas);

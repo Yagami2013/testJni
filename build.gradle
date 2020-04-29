@@ -21,11 +21,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
-        //classpath  fileTree(dir: '/Users/ytt/Desktop/2.14.4.3/rerwiter',includes: ['*.jar'])
+        classpath  fileTree(dir:'/Users/ytt/Desktop/2.10.5.20/rewriter',includes: ['*.jar'])
         //classpath fileTree(dir:'/Users/ytt/Desktop/Archive',includes: ['*.jar'])
-        classpath  fileTree(dir:'/Users/ytt/Desktop/jars/2.15.0/rewriter-2.14.5',include:['*.jar'])
+        //classpath  fileTree(dir:'/Users/ytt/Desktop/jars/2.15.0/rewriter-2.14.5',include:['*.jar'])
         //classpath 'com.networkbench.newlens.agent.android:agent-gradle-plugin:2.14.2'
-        //classpath "com.networkbench:tingyun-ea-agent-android-gradle-plugin:2.13.7.2"
+        //classpath "com.networkbench:tingyun-ea-agent-android-gradle-plugin:2.13.7.1"
         //classpath fileTree(dir:'G:\\TingyunApp\\TestBuild\\TingYun_Android_EA_2.10.5(BA)\\tingyun-ea-agent-android-gradle\\TY_EA_Rewriter',include:['*.jar'])
         //classpath fileTree(dir:'G:\\TingyunApp\\TestBuild\\2.13.7\\nbs-newlens-android-sdk\\rewriter',include:['*.jar'])
         //classpath 'com.bugtags.library:bugtags-gradle:3.0.0'

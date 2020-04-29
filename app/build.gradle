@@ -83,8 +83,8 @@ configurations.all {
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    api 'com.facebook.react:react-native:0.61.5'
-    //compile(name: 'nbsnativecrashlib-release', ext: 'aar')
+    //api 'com.facebook.react:react-native:0.61.5'
+    //compile(name: 'nbsnativecrashlib', ext: 'aar')
     compile(name: 'crashreport-3.0.0', ext: 'aar')
 
     //compile project(':react-native-tingyunapp')
@@ -104,7 +104,7 @@ dependencies {
     //androidTestImplementation 'androidx.test:runner:+'
     //androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //androidTestImplementation 'androidx.test.espresso:espresso-core:+'
-    //implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:+'
     implementation 'com.squareup.okio:okio:1.13.0'
     implementation 'com.facebook.react:react-native:+'
     if (enableHermes) {
@@ -120,7 +120,8 @@ dependencies {
     //compile 'com.github.addappcn:android-pickers:1.0.1'
     //tingyun
     //implementation 'com.networkbench.newlens.agent.android:nbs.newlens.agent:2.14.2'
-    implementation 'com.networkbench.newlens.agent.android:nbs.newlens.nativecrash:1.2.1'
+    //implementation 'com.networkbench.newlens.agent.android:nbs.newlens.nativecrash:1.2.1'
+    //implementation 'com.networkbench:tingyun-ea-agent-android:2.13.7.1'
     //bugly
     //compile 'com.tencent.bugly:crashreport:latest.release'
     //compile 'com.tencent.bugly:crashreport:latest.release'

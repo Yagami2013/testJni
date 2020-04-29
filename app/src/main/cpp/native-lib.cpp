@@ -7,7 +7,7 @@ JNIEXPORT jstring
 
 JNICALL
 
-Java_yangtt_personal_testjni_AC_Crash_stringFromJNI(
+Java_yangtt_personal_testjni_1saas_AC_1Crash_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
 

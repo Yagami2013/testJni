@@ -3,7 +3,7 @@
 //
 #include "../jni/yangtt_personal_testjni_Java2CJNI.h"
 extern "C"
-JNIEXPORT jstring JNICALL Java_yangtt_personal_testjni_Java2CJNI_java2c
+JNIEXPORT jstring JNICALL Java_yangtt_personal_testjni_1saas_Java2CJNI_java2c
         (JNIEnv *env, jobject instance,jint num)
 {
     char str[num];

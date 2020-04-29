@@ -1,16 +1,16 @@
 package yangtt.personal.testjni_saas.util;
 
 public class TestUrls {
-    //有content-length
     public static String qq="http://www.qq.com";
     public static String news="http://www.xinhuanet.com/politics/leaders/2019-03/11/c_1124222229.htm";
     public static String cdata="http://c.data.mob.com/v3/cdata";
+    //有content-length
     public static String sk_content="http://i4.desk.fd.zol-img.com.cn/t_s1080x1920/g5/M00/0E/0F/ChMkJlsYpoWIGyM4AALpWnaCWGcAAo2MAIyoe4AAuly645.jpg?downfile=1551776319938.jpg";
     //chunked
     public static String chunk_baike="https://baike.baidu.com/item/动物世界/20242925";
     //content-length + chunked
     public static String hcy_large="https://download4.caiyun.feixin.10086.cn/storageWeb/servlet/downloadServlet?code=SzUxNDExWUpIeDMxV0wxNzUxN24xRGxZRHBX&un=AD25C39D8C8742300DDD0DE0CC055CC222931ED009FAB8C85F90D6371F7596DB&dom=D971&txType=0";
-
+    public static String youdao="https://note.youdao.com/yws/api/personal/sync/blepenbook?method=pull&keyfrom=note.3.5.9.mac&os=OS_X&os_ver=10.12.6&client_ver=3.5.9&ClientVer=3.5.9&device_id=C02SCAFZG8WN&device_name=ytt&device_type=Mac&device_model=MacBookPro11,4";
     public static String accross_app="http://192.168.2.41:8080/External_01/";
     public  static String https_jd_param ="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fa.jd.com%2F";
     public  static String http_400_param="http://sdktest.com/400.php?ie=UTF-8&wd=APM";

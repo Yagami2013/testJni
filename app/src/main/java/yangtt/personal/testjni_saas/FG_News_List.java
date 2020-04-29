@@ -14,6 +14,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import yangtt.personal.testjni_saas.util.Ok3Util;
 import yangtt.personal.testjni_saas.util.OkHttp3Builder;
@@ -116,7 +118,11 @@ public class FG_News_List extends mBaseFragment implements AdapterView.OnItemCli
                 break;
             case 12:
                 break;
-            case 13:
+            case 17:
+                Map<String,String> form=new HashMap<>();
+                form.put("baseVersion","0");
+                form.put("sessionId","7325");
+                builder.post(TestUrls.youdao);
                 break;
                 default:
                     builder.get(content);

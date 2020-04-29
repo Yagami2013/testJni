@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/node_modules/react-native-tingyunapp/android/react-native-tingyunapp.iml" filepath="$PROJECT_DIR$/node_modules/react-native-tingyunapp/android/react-native-tingyunapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/testJni-master.iml" filepath="$PROJECT_DIR$/testJni-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testJni.iml" filepath="$PROJECT_DIR$/testJni.iml" />
     </modules>
   </component>
 </project>

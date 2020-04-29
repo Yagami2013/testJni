@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "/Users/ytt/Android/sdk/ndk-bundle",
+  "ndkFolder": "/Users/ytt/Android/sdk/ndk/21.1.6352462",
   "messages": [
     {
       "level": "INFO",
@@ -23,7 +23,11 @@
     },
     {
       "level": "INFO",
-      "message": "No user requested version, choosing /Users/ytt/Android/sdk/ndk-bundle which is version 21.0.6113669"
+      "message": "Considering /Users/ytt/Android/sdk/ndk/21.1.6352462 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "No user requested version, choosing /Users/ytt/Android/sdk/ndk/21.1.6352462 which is version 21.1.6352462"
     }
   ]
 }

@@ -1,7 +1,10 @@
 package yangtt.personal.testjni_saas.util;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /*import com.okhttp3.Call;
@@ -12,11 +15,13 @@ import com.okhttp3.Response;*/
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import yangtt.personal.testjni_saas.LogY;
+import yangtt.personal.testjni_saas.R;
 
 public class OkHttp3Builder extends Builder {
 //public class OkHttp3Builder{
@@ -73,7 +78,40 @@ public class OkHttp3Builder extends Builder {
 
     @Override
     public void post(String url) {
+        post(null,url);
+    }
 
+    public void post(Map<String,String> form,String url) {
+        RequestBody fileBody = RequestBody.create(MediaType.parse("image/png"), "/sdcard/NBS/web.jpg");
+        //RequestBody requestBody = new MultipartBody.Builder()
+        MultipartBody.Builder builder=new MultipartBody.Builder()
+                .setType(MultipartBody.FORM)
+                .addFormDataPart("file", "head_img", fileBody);
+        if(form!=null){
+            for (String body:form.keySet()
+            ) {
+                builder.addFormDataPart(body,form.get(body));
+            }
+        }
+
+        RequestBody requestBody=builder.build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .post(requestBody)
+                .build();
+
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+
+            }
+
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+
+            }
+        });
     }
 
     public void get(){
